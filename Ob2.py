@@ -170,13 +170,6 @@ if camera_type == 'picamera':
 
     camera.close()
 
-### USB webcam ###
-elif camera_type == 'usb':
-    # Initialize USB webcam feed
-    camera = cv2.VideoCapture(0)
-    ret = camera.set(3,IM_WIDTH)
-    ret = camera.set(4,IM_HEIGHT)
-
     while(True):
 
         t1 = cv2.getTickCount()
